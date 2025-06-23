@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtivo IA - Soluções de IA e Desenvolvimento Web</title>
     <meta name="description" content="Transformamos seus canais digitais em verdadeiras máquinas geradoras de valor através de soluções de IA e desenvolvimento web.">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0idXJsKCNncmFkaWVudDAoKSIvPgo8dGV4dCB4PSIxNiIgeT0iMjIiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5QPC90ZXh0Pgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudDAoKSIgeDE9IjAiIHkxPSIwIiB4Mj0iMzIiIHkyPSIzMiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjMjU2M0VCIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzc5MzNEQyIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPgo=" type="image/svg+xml">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -21,7 +22,25 @@
                 <a href="#home" class="nav-link">Início</a>
                 <a href="#about" class="nav-link">Sobre</a>
                 <a href="#why-choose" class="nav-link">Por que nos escolher</a>
-                <a href="#services" class="nav-link">Soluções</a>
+                <div class="nav-dropdown">
+                    <a href="#services" class="nav-link dropdown-toggle">Soluções</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-section">
+                            <h4>Agentes IA Personalizados</h4>
+                            <a href="sdr.html" class="dropdown-item" target="_blank">SDR (Pré-vendas e Qualificação)</a>
+                            <a href="rag.html" class="dropdown-item" target="_blank">RAG (Retrieval-Augmented Generation)</a>
+                            <a href="suporte-ecommerce.html" class="dropdown-item" target="_blank">Suporte E-commerce</a>
+                            <a href="recuperacao-vendas.html" class="dropdown-item" target="_blank">Recuperação de Vendas via WhatsApp</a>
+                            <a href="prospeccao.html" class="dropdown-item" target="_blank">Prospecção e Agendamento Automático</a>
+                        </div>
+                        <div class="dropdown-section">
+                            <h4>Desenvolvimento Web</h4>
+                            <a href="sites-institucionais.html" class="dropdown-item" target="_blank">Sites Institucionais</a>
+                            <a href="landing-pages.html" class="dropdown-item" target="_blank">Landing Pages</a>
+                            <a href="ecommerce.html" class="dropdown-item" target="_blank">Lojas Online (E-commerce)</a>
+                        </div>
+                    </div>
+                </div>
                 <a href="#contact" class="nav-link">Contato</a>
             </nav>
             <button class="mobile-menu-btn" id="mobile-menu-btn">
@@ -104,7 +123,7 @@
                     <p class="cta-urgency">Entre em contato e solicite uma demo hoje mesmo!</p>
                     <div class="cta-buttons">
                         <a href="https://calendly.com/levysherculano" target="_blank" class="btn btn-primary btn-large pulse-animation">Solicitar Demo Agora</a>
-                        <a href="https://wa.me/5532999966080" class="btn btn-whatsapp">💬 WhatsApp Direto</a>
+                        <a href="https://wa.me/5532999966080" target="_blank" class="btn btn-whatsapp">💬 WhatsApp Direto</a>
                     </div>
                 </div>
             </div>
@@ -125,11 +144,11 @@
                     <h3 class="service-title">Agentes IA Personalizados</h3>
                     <p class="service-description">Desenvolvemos agentes de IA sob medida para:</p>
                     <ul class="service-list">
-                        <li>SDR (Pré-vendas e Qualificação de Leads)</li>
-                        <li>RAG (Retrieval-Augmented Generation)</li>
-                        <li>Suporte E-commerce</li>
-                        <li>Recuperação de Vendas via WhatsApp</li>
-                        <li>Prospecção e Agendamento Automático</li>
+                        <li><a href="sdr.html" target="_blank" class="service-link">SDR (Pré-vendas e Qualificação de Leads)</a></li>
+                        <li><a href="rag.html" target="_blank" class="service-link">RAG (Retrieval-Augmented Generation)</a></li>
+                        <li><a href="suporte-ecommerce.html" target="_blank" class="service-link">Suporte E-commerce</a></li>
+                        <li><a href="recuperacao-vendas.html" target="_blank" class="service-link">Recuperação de Vendas via WhatsApp</a></li>
+                        <li><a href="prospeccao.html" target="_blank" class="service-link">Prospecção e Agendamento Automático</a></li>
                     </ul>
                     <p class="service-note">Com integração fácil aos seus canais de suporte como WhatsApp, email e chat ao vivo.</p>
                 </div>
@@ -139,9 +158,9 @@
                     <h3 class="service-title">Desenvolvimento Web</h3>
                     <p class="service-description">Construímos projetos web com foco em performance, usabilidade e conversão:</p>
                     <ul class="service-list">
-                        <li>Sites Institucionais</li>
-                        <li>Landing Pages</li>
-                        <li>Lojas Online (E-commerce)</li>
+                        <li><a href="sites-institucionais.html" target="_blank" class="service-link">Sites Institucionais</a></li>
+                        <li><a href="landing-pages.html" target="_blank" class="service-link">Landing Pages</a></li>
+                        <li><a href="ecommerce.html" target="_blank" class="service-link">Lojas Online (E-commerce)</a></li>
                     </ul>
                     <div class="tech-stack">
                         <h4>Tecnologias que utilizamos:</h4>

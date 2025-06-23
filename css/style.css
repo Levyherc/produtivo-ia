@@ -99,6 +99,85 @@ body {
     transition: all 0.3s ease;
 }
 
+/* Dropdown Navigation */
+.nav-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.dropdown-toggle::after {
+    content: '▼';
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 320px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    border: 1px solid #e5e7eb;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.nav-dropdown:hover .dropdown-toggle::after {
+    transform: rotate(180deg);
+}
+
+.dropdown-section {
+    margin-bottom: 1.5rem;
+}
+
+.dropdown-section:last-child {
+    margin-bottom: 0;
+}
+
+.dropdown-section h4 {
+    color: #1f2937;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    color: #6b7280;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    margin-bottom: 0.25rem;
+}
+
+.dropdown-item:hover {
+    background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+    color: #2563eb;
+    transform: translateX(4px);
+}
+
 /* Hero Section */
 .hero {
     padding: 120px 0 80px;
@@ -423,6 +502,183 @@ section {
     flex-wrap: wrap;
 }
 
+/* Service Pages */
+.service-page {
+    padding: 120px 0 80px;
+    min-height: 100vh;
+}
+
+.service-hero {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.service-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #2563eb, #9333ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.service-subtitle {
+    font-size: 1.2rem;
+    color: #6b7280;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.service-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.service-description {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.service-description h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.service-description p {
+    font-size: 1.1rem;
+    color: #4b5563;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.benefits-grid {
+    margin-bottom: 4rem;
+}
+
+.benefits-grid h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 2rem;
+}
+
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.benefit-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 1px solid #e5e7eb;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.benefit-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.benefit-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.benefit-card p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.features-section {
+    margin-bottom: 4rem;
+}
+
+.features-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.features-list {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.features-list li {
+    padding: 1rem 0;
+    position: relative;
+    padding-left: 2rem;
+    color: #4b5563;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.features-list li::before {
+    content: "✓";
+    color: #10b981;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.features-list li:last-child {
+    border-bottom: none;
+}
+
+.cta-section {
+    background: linear-gradient(135deg, #2563eb, #9333ea);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta-section .btn {
+    background: white;
+    color: #2563eb;
+    font-weight: 700;
+}
+
+.cta-section .btn:hover {
+    background: #f8fafc;
+    transform: translateY(-2px);
+}
+
 /* Services Section */
 .services-grid {
     display: grid;
@@ -671,6 +927,7 @@ section {
 
 .contact-icon {
     font-size: 1.2rem;
+
 }
 
 .contact-method span:last-child {
@@ -836,8 +1093,8 @@ section {
         padding: 2rem 1.5rem;
     }
 
-    .calendly-features {
-        max-width: 100%;
+    .why-choose-cta {
+        padding: 2rem 1rem;
     }
 }
 
@@ -881,4 +1138,28 @@ section {
 
 .service-card:nth-child(2) {
     animation-delay: 0.2s;
+}
+
+/* Service Links */
+.service-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.service-link:hover {
+    color: #7933dc;
+    border-bottom-color: #7933dc;
+    transform: translateX(5px);
+}
+
+.service-list li {
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.service-list li:hover {
+    padding-left: 10px;
 }
